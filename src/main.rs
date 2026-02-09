@@ -40,8 +40,6 @@ fn init() -> ! {
             )
             .unwrap();
 
-    let mut leds = [[0u8; 5]; 5];
-
     //start in coarse mode
     let mut coarse_mode = true;
 
@@ -53,34 +51,29 @@ fn init() -> ! {
 
         //Read accel in milli-g
         let (x, y, z) = sensor.acceleration().unwrap().xyz_mg();
+        
+        //Fresh LED grid
+        let mut leds = [[0u8; 5]; 5];
 
         //check if board is upside down (== z positive)
-        if z > 0 {
-            //blank the display
-            leds = [[0u8; 5]; 5];
-            display.show(&mut timer0, leds, 200);
-        } 
-        else {
+        // Only draw dot if NOT upside down
+        if z <= 0 {
             let range = if coarse_mode { 500.0 } else { 50.0 };
 
-            //scale x and y to LED coors
             let led_x = scale_to_led(-x as f32, range);
             let led_y = scale_to_led(y as f32, range);
 
-            //clear all LEDS
-            leds = [[0u8; 5]; 5];
-
             leds[led_y][led_x] = 255u8;
-
-            //display for 200 ms
-            display.show(&mut timer0, leds, 200);
         }
 
-        if button_a.is_low().unwrap() && button_b.is_high().unwrap() {
-            coarse_mode = true;
-        } else if button_b.is_low().unwrap() && button_a.is_high().unwrap(){
-            coarse_mode = false;
-        }
+    display.show(&mut timer0, leds, 200);
+
+    // Button handling
+    if button_a.is_low().unwrap() && button_b.is_high().unwrap() {
+        coarse_mode = true;
+    } else if button_b.is_low().unwrap() && button_a.is_high().unwrap() {
+        coarse_mode = false;
+    }
     }
 }
 

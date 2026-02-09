@@ -1,0 +1,325 @@
+   0.016849125s  INFO prepare_target{force=false package_id=mb2_project2 v0.1.0 (/Users/jayabe/rust-ws/mb2_project2) target="mb2_project2"}: cargo::core::compiler::fingerprint: fingerprint error for mb2_project2 v0.1.0 (/Users/jayabe/rust-ws/mb2_project2)/Check { test: false }/TargetInner { name: "mb2_project2", doc: true, ..: with_path("/Users/jayabe/rust-ws/mb2_project2/src/main.rs", Edition2024) }
+   0.016862458s  INFO prepare_target{force=false package_id=mb2_project2 v0.1.0 (/Users/jayabe/rust-ws/mb2_project2) target="mb2_project2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/mb2_project2-a5a27a95e1d49823/bin-mb2_project2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+   0.020060042s  INFO prepare_target{force=false package_id=microbit-v2 v0.16.0 target="microbit"}: cargo::core::compiler::fingerprint: fingerprint error for microbit-v2 v0.16.0/Check { test: false }/TargetInner { ..: lib_target("microbit", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/microbit-v2-0.16.0/src/lib.rs", Edition2018) }
+   0.020067667s  INFO prepare_target{force=false package_id=microbit-v2 v0.16.0 target="microbit"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/microbit-v2-f0164490f6b38412/lib-microbit`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+   0.020192542s  INFO prepare_target{force=false package_id=microbit-common v0.16.0 target="microbit_common"}: cargo::core::compiler::fingerprint: fingerprint error for microbit-common v0.16.0/Check { test: false }/TargetInner { ..: lib_target("microbit_common", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/microbit-common-0.16.0/src/lib.rs", Edition2018) }
+   0.020196500s  INFO prepare_target{force=false package_id=microbit-common v0.16.0 target="microbit_common"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/microbit-common-b77e198ab2414c18/lib-microbit_common`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+   0.020339625s  INFO prepare_target{force=false package_id=nrf52833-hal v0.19.0 target="nrf52833_hal"}: cargo::core::compiler::fingerprint: fingerprint error for nrf52833-hal v0.19.0/Check { test: false }/TargetInner { ..: lib_target("nrf52833_hal", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nrf52833-hal-0.19.0/src/lib.rs", Edition2018) }
+   0.020343250s  INFO prepare_target{force=false package_id=nrf52833-hal v0.19.0 target="nrf52833_hal"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/nrf52833-hal-4c75c507da1308c0/lib-nrf52833_hal`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile_with_exec
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+   0.020468042s  INFO prepare_target{force=false package_id=nrf-hal-common v0.19.0 target="nrf_hal_common"}: cargo::core::compiler::fingerprint: fingerprint error for nrf-hal-common v0.19.0/Check { test: false }/TargetInner { ..: lib_target("nrf_hal_common", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nrf-hal-common-0.19.0/src/lib.rs", Edition2018) }
+   0.020471667s  INFO prepare_target{force=false package_id=nrf-hal-common v0.19.0 target="nrf_hal_common"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/nrf-hal-common-81cfbd2de5c38021/lib-nrf_hal_common`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile_with_exec
+  14: cargo::ops::cargo_compile::compile
+  15: cargo::commands::check::exec
+  16: <cargo::cli::Exec>::exec
+  17: cargo::main
+  18: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  19: std::rt::lang_start::<()>::{closure#0}
+  20: std::rt::lang_start_internal
+  21: _main
+   0.020917750s  INFO prepare_target{force=false package_id=fixed v1.30.0 target="fixed"}: cargo::core::compiler::fingerprint: fingerprint error for fixed v1.30.0/Check { test: false }/TargetInner { ..: lib_target("fixed", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fixed-1.30.0/src/lib.rs", Edition2024) }
+   0.020921375s  INFO prepare_target{force=false package_id=fixed v1.30.0 target="fixed"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/fixed-fb221284202ee703/lib-fixed`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.021292958s  INFO prepare_target{force=false package_id=half v2.7.1 target="half"}: cargo::core::compiler::fingerprint: fingerprint error for half v2.7.1/Check { test: false }/TargetInner { ..: lib_target("half", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/half-2.7.1/src/lib.rs", Edition2021) }
+   0.021296667s  INFO prepare_target{force=false package_id=half v2.7.1 target="half"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/half-a3fcae64086f2122/lib-half`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  14: cargo::ops::cargo_compile::compile_ws
+  15: cargo::ops::cargo_compile::compile_with_exec
+  16: cargo::ops::cargo_compile::compile
+  17: cargo::commands::check::exec
+  18: <cargo::cli::Exec>::exec
+  19: cargo::main
+  20: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  21: std::rt::lang_start::<()>::{closure#0}
+  22: std::rt::lang_start_internal
+  23: _main
+   0.021423875s  INFO prepare_target{force=false package_id=zerocopy v0.8.39 target="zerocopy"}: cargo::core::compiler::fingerprint: fingerprint error for zerocopy v0.8.39/Check { test: false }/TargetInner { ..: lib_target("zerocopy", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.8.39/src/lib.rs", Edition2021) }
+   0.021427417s  INFO prepare_target{force=false package_id=zerocopy v0.8.39 target="zerocopy"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/zerocopy-42d8dbad9fbb3f2d/lib-zerocopy`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: cargo::core::compiler::compile
+  13: cargo::core::compiler::compile
+  14: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  15: cargo::ops::cargo_compile::compile_ws
+  16: cargo::ops::cargo_compile::compile_with_exec
+  17: cargo::ops::cargo_compile::compile
+  18: cargo::commands::check::exec
+  19: <cargo::cli::Exec>::exec
+  20: cargo::main
+  21: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  22: std::rt::lang_start::<()>::{closure#0}
+  23: std::rt::lang_start_internal
+  24: _main
+   0.021853458s  INFO prepare_target{force=false package_id=nrf-usbd v0.3.0 target="nrf_usbd"}: cargo::core::compiler::fingerprint: fingerprint error for nrf-usbd v0.3.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("nrf_usbd", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nrf-usbd-0.3.0/src/lib.rs", Edition2018) }
+   0.021857042s  INFO prepare_target{force=false package_id=nrf-usbd v0.3.0 target="nrf_usbd"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/nrf-usbd-16ec885a1b900145/lib-nrf_usbd`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.022318500s  INFO prepare_target{force=false package_id=nrf52833-pac v0.12.2 target="nrf52833_pac"}: cargo::core::compiler::fingerprint: fingerprint error for nrf52833-pac v0.12.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("nrf52833_pac", ["lib"], "/Users/jayabe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/nrf52833-pac-0.12.2/src/lib.rs", Edition2018) }
+   0.022322458s  INFO prepare_target{force=false package_id=nrf52833-pac v0.12.2 target="nrf52833_pac"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/nrf52833-pac-41c185f3e9ec7c7b/lib-nrf52833_pac`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: cargo::core::compiler::compile
+  12: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  13: cargo::ops::cargo_compile::compile_ws
+  14: cargo::ops::cargo_compile::compile_with_exec
+  15: cargo::ops::cargo_compile::compile
+  16: cargo::commands::check::exec
+  17: <cargo::cli::Exec>::exec
+  18: cargo::main
+  19: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  20: std::rt::lang_start::<()>::{closure#0}
+  21: std::rt::lang_start_internal
+  22: _main
+   0.022762625s  INFO prepare_target{force=false package_id=mb2_project2 v0.1.0 (/Users/jayabe/rust-ws/mb2_project2) target="mb2_project2"}: cargo::core::compiler::fingerprint: fingerprint error for mb2_project2 v0.1.0 (/Users/jayabe/rust-ws/mb2_project2)/Check { test: true }/TargetInner { name: "mb2_project2", doc: true, ..: with_path("/Users/jayabe/rust-ws/mb2_project2/src/main.rs", Edition2024) }
+   0.022766708s  INFO prepare_target{force=false package_id=mb2_project2 v0.1.0 (/Users/jayabe/rust-ws/mb2_project2) target="mb2_project2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/jayabe/rust-ws/mb2_project2/target/thumbv7em-none-eabihf/debug/.fingerprint/mb2_project2-93e7b3661fba060a/test-bin-mb2_project2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+    Checking zerocopy v0.8.39
+    Checking nrf-usbd v0.3.0
+    Checking nrf52833-pac v0.12.2
+    Checking half v2.7.1
+    Checking fixed v1.30.0
+    Checking nrf-hal-common v0.19.0
+    Checking nrf52833-hal v0.19.0
+    Checking microbit-common v0.16.0
+    Checking microbit-v2 v0.16.0
+    Checking mb2_project2 v0.1.0 (/Users/jayabe/rust-ws/mb2_project2)
+error: could not compile `mb2_project2` (bin "mb2_project2" test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
